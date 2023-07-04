@@ -18,8 +18,6 @@ h2, h4, p {
 }
 
 #card {
-    width: 1440px;
-    height: 600px;
     box-shadow: 1px 1px 4px 4px rgba(0,0,0,0.32);
     border-radius: 7px;
     overflow: hidden;
@@ -38,7 +36,7 @@ h2, h4, p {
 }
 
 #bottom-left-container {
-    width: 50%;
+    width: 100%;
     display: inline-block;
     height: 100%;
     vertical-align: top;
@@ -92,7 +90,7 @@ button:hover {
 
 #bottom-right-container {
     display: inline-block;
-    width: 50%;
+    width: 100%;
     height: 100%;
     vertical-align: top;
     background-color: rgba(42,178, 175, 0.8);
@@ -119,3 +117,18 @@ ul {
     font-size: 0.9rem;
     opacity: 0.8;
 }
+
+
+/* Mobile-first apprach to make page responsive */
+@media (min-width: 576px) {
+
+    #card {
+        width: 550px;
+        height: 400px;
+    }
+
+    #bottom-left-container, #bottom-right-container {
+        width: 50%;
+    }
+}
+
